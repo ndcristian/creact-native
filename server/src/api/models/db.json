@@ -1,0 +1,11 @@
+{
+  "_failed_logins": ["id", "ip", "cui", "username", "what_failed", "time"],
+  "_groups": ["id", "name", "active", "user", "created", "modifier", "modified"],
+  "_groups_users": ["id", "username", "group_id", "user", "created", "modifier", "modified"],
+  "_sessions": ["sid", "ip", "username", "role", "created", "last_active", "path_info"],
+  "_settings": ["id", "name", "value"],
+  "_users": ["id", "username", "pwdhash", "salt", "role", "full_name", "active", "settings", "last_login_attempt", "fail_counter", "user", "created", "modifier", "modified"],
+  "environment": ["id", "measure_id", "station_name", "staions_id", "measure_name", "notification", "value", "user", "created", "modifier", "modified"],
+  "measures": ["id", "name", "user", "created", "modifier", "modified"],
+  "stations": ["id", "name", "region_name", "region_id", "notification", "user", "created", "modifier", "modified"]
+}

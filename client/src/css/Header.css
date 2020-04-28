@@ -1,0 +1,13 @@
+.antet {
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #333333;
+  font-size:100%;
+  height:7%;
+}
+.antetTitle {
+  padding:1%;
+}
+.antet p {
+  float: left;
+}
