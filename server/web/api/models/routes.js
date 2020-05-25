@@ -7,7 +7,7 @@ module.exports = [
       admin: ['post:all','get:all', 'put:all', 'delete:all'] ,  
       anonymous: ['post:all','get:all', 'put:all', 'delete:all'] 
     },
-    table:'monitor',
+    table:'environment',
     template:'json'   
   }, 
   

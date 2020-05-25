@@ -3,12 +3,12 @@ var router = express.Router();
 var routes = require('../models/routes');
 var controls = require('./controls');
 //  var crud = require('../models/crud');
-
+var cors = require('cors');
 console.log('-----> api/controls/routes');
 
 routes.forEach(function(route, index) {
 
-  router.get('/' + route.name, function(req, res) {
+  router.get('/' + route.name, cors(), function(req, res) {
     let sqlParams = controls.sqlParams(route, req);
     let userData = controls.userRights(route, req);
     let crud = controls.crud(route, 'get');
