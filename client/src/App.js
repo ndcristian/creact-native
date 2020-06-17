@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
 
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-
 
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage.component';
-
+import {setCurrentLocation} from './redux/location/location-action';
+import {connect} from 'react-redux'
 
 const HatsPage = () => (
 
@@ -20,7 +16,7 @@ const HatsPage = () => (
 
 function App() {
   return (
-    <div>
+  
       <Switch>
    
           {/* *!* for documentation */}
@@ -30,12 +26,22 @@ function App() {
           {/* exact = {true or false} , if not specified , default means true */}
           <Route exact path='/' component={HomePage}></Route>
           <Route path='/hats' component={HatsPage}></Route>
-  
 
       </Switch>
 
-    </div>
+  
   );
 }
 
-export default App;
+
+const mapDispatchToProps = (dispatch)=>{
+  console.log ('App::mapDispatchToProps:', dispatch);
+  return {
+    setCurrentLocation: location =>dispatch(setCurrentLocation(location))
+  }
+}
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);

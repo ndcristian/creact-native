@@ -1,0 +1,13 @@
+.customSearchForm {
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+    }
+}
+

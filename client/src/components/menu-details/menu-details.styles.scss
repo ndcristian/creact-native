@@ -1,0 +1,73 @@
+.itemsWraper {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.itemDetailsRowWraper {
+    width: 100%;
+    height: 100%;
+}
+.itemDetailsRow {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    width: 100%;
+    height: auto;
+    // float: left;
+    padding: 3px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    background-color: #008080;
+    color: white;
+}
+.itemInfo {
+    width: 100%;
+    float: left;
+    padding: 3px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    background-color: #f0e68c;
+}
+.items {
+    float: left;
+    padding: 2px;
+}
+.itemName {
+    width: 40%;
+}
+.itemPrice {
+    width: 17%;
+}
+.itemQty {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+}
+.qtyInput {
+    width: 30%;
+    height: 100%;
+}
+.plusButton {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    border-radius: 30px !important;
+    margin: 2px;
+}
+.validateButton {
+    padding: 0px !important;
+    width: 30%;
+    // border-radius: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+     height: 50%;
+     width: 50%;
+}

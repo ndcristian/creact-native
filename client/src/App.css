@@ -1,5 +1,8 @@
 
 body {
   font-family: 'Open Sans Condensed';
-  
+  width: 100%;
+}
+#root {
+  width: 100%;
 }

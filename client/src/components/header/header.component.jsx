@@ -1,16 +1,28 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import './header.styles.scss';
 
-const Header = () => (
-    <Container>
-        <Row>
-        <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-        <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-        <Col sm="4">.col-sm-4</Col>
-        </Row>
-    </Container>
+import { connect } from 'react-redux';
 
+const Header = ({ currentLocation }) => (
+    <Jumbotron className="customJumbotron">
+        {currentLocation ? (
+            <div>
+                currentLocation
+            </div>
+
+        ) : (
+                <div>
+                    No current
+                </div>
+            )
+        }
+    </Jumbotron>
 );
 
-export default Header;
+const mapStateToProps = (state) => {
+    console.log('header state : ', state);
+    return { currentLocation: state.location.currentLocation };
+}
+
+export default connect(mapStateToProps)(Header);

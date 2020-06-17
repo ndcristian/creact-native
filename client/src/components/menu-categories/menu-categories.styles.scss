@@ -1,0 +1,40 @@
+
+.categories {
+    width: 100%;
+    height: fit-content;
+    float: left;
+    margin-top: 10px;
+}
+.categoryTitle{
+    color:#FFD700;
+    font-weight: bold;;;
+    border-radius: 10px;
+    background-color: blue;
+    height: fit-content;
+    padding: 3px;
+    display: flex;
+    margin-bottom: 3px;
+}
+.categoryIcon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 10%;
+    float: left;
+    margin:3px
+}
+.categoryItems {
+    width: fit-content;
+    float: left;
+    padding: 3px;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.categoryRow {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}

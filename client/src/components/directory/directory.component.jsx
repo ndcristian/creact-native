@@ -1,7 +1,6 @@
 import React from 'react';
 
-import MenuItem from '../menu-item/menu-item.component';
-import MenuCategory from '../menu-item/menu-categories.component';
+import MenuCategory from '../menu-categories/menu-categories.component';
 
 import './directory.styles.scss';
 
@@ -14,30 +13,27 @@ class Directory extends React.Component {
         {
           title: 'Food',
           // default path is from public directory
-          imageUrl: './assets/burger_122704.ico',
+          imageUrl: './assets/fast-food.png',
+          size: 'full',
           id: 1
         },
         {
           title: 'Drinks',
-          imageUrl: './assets/Drinks-46_icon-icons.com_61977.png',
+          imageUrl: './assets/drinks.png',
+          size: 'full',
           id: 2
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: 'Ice&Chocolate',
+          imageUrl: './assets/icecream.png',
+          size: 'full',
           id: 3
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-          size: 'large',
+          title: 'Others',
+          imageUrl: './assets/drinks.png',
+          size: 'full',
           id: 4
-        },
-        {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-          size: 'large',
-          id: 5
         }
       ]
     };
@@ -45,9 +41,11 @@ class Directory extends React.Component {
 
   render() {
     return (
-      <div className='directory-menu'>
+      <div className="categoryWraper">
         {this.state.sections.map(({ title, imageUrl, id, size }) => (
+
           <MenuCategory key={id} title={title} imageUrl={imageUrl} size={size} />
+
         ))}
       </div>
     );
